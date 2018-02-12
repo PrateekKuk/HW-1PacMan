@@ -8,7 +8,7 @@ You will need to take into account the size of the image.
 
 */
 var exercise = {};
-var boundary = window.innerWidth; //gets the boundary for each device, but you must hit refresh after resizing the browser window
+var boundary = window.innerWidth; //gets the boundary for browser window, but you must hit refresh after resizing the browser window
 exercise.flag = 0; // 0 = mouth open  1 = mouth shut
 exercise.increment = 20; // pixels to move either + or -
 exercise.run = function() {
