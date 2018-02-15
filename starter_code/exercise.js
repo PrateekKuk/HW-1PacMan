@@ -56,11 +56,11 @@ exercise.checkWallCollision = function() {
     console.log(exercise.pos.x + exercise.img1.clientWidth);
     if (boundary - (exercise.pos.x + exercise.img1.clientWidth) <= 0) {
         exercise.flag = 1;
-        exercise.increment = -20;
+        exercise.increment = -exercise.increment;
     } else if (exercise.pos.x <= 0){
         exercise.flag = 0;
         exercise.pos.x = 0;
-        exercise.increment = 20;
+        exercise.increment = -exercise.increment;
     }
 
 };
